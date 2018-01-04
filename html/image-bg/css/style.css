@@ -326,7 +326,7 @@ h6 {
  * Background Overlay Color
  * ====================================
  */
-.overlay-color {
+/*.overlay-color {
   position: relative;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -338,7 +338,7 @@ h6 {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.65);
-}
+}*/
 /**
  * ====================================
  * Making Same Height Left & Right Part
@@ -785,6 +785,24 @@ h6 {
   background-attachment: initial;
   background-repeat: no-repeat;
 }
+  .bg-cover .overlay-color {
+    position: relative;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .bg-cover .bg-overlay::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+  .bg-cover:hover .overlay-color {
+    background-color: rgba(0,0,0,0.8);
+  }
+
 .container-half-left {
   left: 0;
   background-position: 50% 50%;
@@ -1650,3 +1668,21 @@ h6 {
 .copyright p {
   font-size: 13px;
 }
+
+
+
+
+
+.background {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*background-color: rgba(0, 0, 0, 1);*/
+  }
+.background::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
