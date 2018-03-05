@@ -10,10 +10,6 @@
         <meta name="developer" content="TemplateOcean">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> -->
-
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
@@ -22,6 +18,7 @@
         <link rel="stylesheet" href="icons/toicons/css/styles.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
 
     </head>
     <body class="">
@@ -33,8 +30,8 @@
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 
                         <a class="okayNav-header__logo navbar-brand" href="#">
-                            <img src="images/logo.png" alt="" class="logo-1 img-responsive">
-                            <img src="images/logo-dark.png" alt="" class="logo-2 img-responsive">
+                            <img src="images/logo/logo_022518.png" alt="" class="logo-1">
+                            <img src="images/logo/logo_022518.png" alt="" class="logo-2">
                         </a>
 
                     </div>
@@ -44,6 +41,8 @@
                             <ul id="navbar-nav" class="navbar-nav">
                                 <li><a class="btn-nav" href="#events">Events</a></li>
                                 <li><a class="btn-nav" href="#about">About</a></li>
+                                <li><a class="btn-nav" href="#photos">Photos</a></li>
+                                <li><a class="btn-nav" href="#contact">Contact</a></li>
                             </ul>
                         </nav>
 
@@ -80,6 +79,16 @@
                     <div class="section-header col-sm-8 col-sm-offset-2">
                         <h2 class="section-heading">Events</h2>
                     </div>
+                    <div class="section-header col-sm-8 col-sm-offset-2">
+                        <h4 class="section-heading">Upcoming</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+                        <ul class="event-list">
+                        </ul>
+                    </div>
+                    <div class="section-header col-sm-8 col-sm-offset-2">
+                        <h4 class="section-heading">Past</h2>
+                    </div>
                     <div class="col-xs-12 col-sm-offset-2 col-sm-8">
                         <ul class="event-list">
                             <li>
@@ -89,10 +98,9 @@
                                     <span class="year">2018</span>
                                     <span class="time">5pm</span>
                                 </time>
-                                <!-- <img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" /> -->
                                 <div class="info">
                                     <h2 class="title">Networking Event @ Capital One</h2>
-                                    <p class="desc">RSVP Eventbrite: <a href="">LINK</a></p>
+                                    <!-- <p class="desc">RSVP Eventbrite: <a href="">LINK</a></p> -->
                                 </div>
                             </li>
                         </ul>
@@ -123,7 +131,7 @@
                     </div>
 
                     <div class="each-features col-sm-6">
-                            <a class="inner text-center bg-cover light-text" href="#">
+                        <a class="inner text-center bg-cover light-text" href="#">
                             <div class="overlay-color">
                                 <div class="group">
                                     <h4>DATA SCIENCE INSTITUTE <br/> ALUMNI NETWORK</h4>
@@ -138,7 +146,29 @@
             </div> 
         </section>
 
-        <footer class="footer-section background-semi-dark">
+        <section class="events relative background-semi-dark" id="photos">
+            <div class="container">
+                <div class="row section-separator">
+
+                    <div class="section-header col-sm-8 col-sm-offset-2">                        
+                        <h2 class="section-heading">Photos</h2>
+                    </div>
+
+                <div class="col-md-12">
+                    <!-- <div class="row"> -->
+                    <div class="gal">
+                        <img src="images/events/0118-capitalone/a.jpeg" alt="">
+                        <img src="images/events/0118-capitalone/b.jpg" alt="">
+                        <img src="images/events/0118-capitalone/c.JPG" alt="" style="transform: rotate(180deg)">
+                        <img src="images/events/0118-capitalone/d.JPG" alt="" style="transform: rotate(180deg)">
+                        <img src="images/events/0118-capitalone/e.jpeg" alt="">
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-section relative background-dark" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="footer-header">
@@ -157,6 +187,7 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/plagin-js/plagin.js"></script>
         <script src="js/custom-scripts.js"></script>
+        <!-- <script src="js/magnific-popup.js"></script> -->
 
     </body>
 

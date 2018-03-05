@@ -920,7 +920,10 @@ h6 {
 .main-navbar-top {
   border: 0px solid;
   top: 0px;
-  padding-top: 25px;
+  border-bottom: 10px black;
+  /*bottom: 10px black;*/
+  /*padding-top: 25px;*/
+  padding: 10px;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
@@ -933,7 +936,7 @@ h6 {
   transform-style: preserve-3d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: transparent;
+  background-color: black;
   z-index: 100;
 }
 .main-navbar-top .okayNav-header {
@@ -1030,7 +1033,7 @@ h6 {
   color: #2b323f;
 }
 .main-navbar-top.navbar-home {
-  padding-top: 0;
+  padding-top: 10;
   background-color: #ffffff;
   box-shadow: 0 1px 12px 0px rgba(0, 0, 0, 0.1) ;
   -moz-box-shadow: 0 1px 12px 0px rgba(0, 0, 0, 0.1) ;
@@ -1084,7 +1087,7 @@ h6 {
  * ===============================
 */
 .bg-image-1 {
-  background: url('../images/background-1.jpg');
+  background: url('../images/events/0118-capitalone/a.jpeg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1676,7 +1679,7 @@ h6 {
 
 .background {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.8);
+    /*background-color: rgba(0, 0, 0, 0.8);*/
     /*background-color: rgba(0, 0, 0, 1);*/
   }
 .background::before {
@@ -1705,8 +1708,9 @@ h6 {
     display: inline-block;
     width: 100%;
     color: rgb(255, 255, 255);
+    background-color: #035DA5;
     /*background-color: rgb(197, 44, 102);*/
-    background-color: #252c2f;
+    /*background-color: #252c2f;*/
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -1848,3 +1852,19 @@ h6 {
       padding: 10px 0px 9px;
     }
   
+.gal {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+  } 
+  .gal img{ width: 100%; padding: 7px 0;}
+@media (max-width: 500px) {
+    .gal {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  } 
+  }
+img {
+  image-orientation: from-image;
+}
